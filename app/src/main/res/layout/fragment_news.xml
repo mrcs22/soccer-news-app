@@ -15,4 +15,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/news_item"/>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rvNews"
+        app:layout_constraintEnd_toEndOf="@+id/rvNews"
+        app:layout_constraintStart_toStartOf="@+id/rvNews"
+        app:layout_constraintTop_toTopOf="@+id/rvNews"
+        />
+
+    <TextView
+        android:id="@+id/tvNoNetwork"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/txt_no_network_access"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="@+id/rvNews"
+        app:layout_constraintEnd_toEndOf="@+id/rvNews"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
